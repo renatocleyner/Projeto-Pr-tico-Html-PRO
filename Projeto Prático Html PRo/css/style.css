@@ -1,0 +1,211 @@
+:root{
+    --bg-body:#131416;
+    --color-font:#fff;
+    --color-button: #0772EB;
+    --color-card:#1E212C;
+
+}
+.container{
+    max-width: 830px;
+    margin: auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-body);
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.logo h2{
+    color:var(--color-font);
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.action-title h2{
+    font-size: 40px;
+    color: var(--color-font);
+}
+
+.button{
+    background-color: var(--color-button);
+    display: inline-block;
+    padding: 15px 70px;
+    border-radius: 50px;
+    color: var(--color-font);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+.ebook img{
+    width: 230px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 250px;
+}
+
+.section2 h2{
+    color: var(--color-font);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.cards{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-card);
+    color: var(--color-font);
+    width: 220px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 65px;
+    height: 65px;
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.button2{
+    display: inline-block;
+    background-color: #1E212C;
+    color: var(--color-font);
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.section3 h2{
+    font-size: 55px;
+    color: #0772EB;
+}
+.section3 p{
+    color: var(--color-font);
+    margin-top: -25px;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2029;
+    height: 100px;
+}
+
+.button-footer{
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: var(--color-button);
+    border-radius: 50px;
+    color: var(--color-font);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+footer p{
+    color: var(--color-font);
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:420px){
+    .section1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .ebook img{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .action-title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-title h2{
+        font-size: 26px;
+        
+        text-align: center;
+        color: var(--color-font);
+    }
+
+    .button{
+        margin-top: 20px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card{
+        margin-top: 40px;
+    }
+
+    .section3 h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    
+
+    footer p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
